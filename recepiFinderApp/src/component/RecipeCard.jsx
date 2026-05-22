@@ -1,9 +1,9 @@
 import React from 'react'
 
-const RecipeCard = ({name,catagory,area,country,instruction,id}) => {
+const RecipeCard = ({name,image,catagory,area,country,instruction,id}) => {
   return (
     <div>
-      <img src="" alt="" />
+      <img src={image} alt="image" style={{width:'100%',borderRadius:'8px'}} />
       <h2>{name}</h2>
       <h3>{catagory}</h3>
       <h3>{area}</h3>
