@@ -1,7 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const RecipeCard = ({name,image,catagory,area,country,Instruction,id}) => {
   return (
+    <Link to={`/recipes/${id}`} style={{textDecoration:'none', color:'inherit'}}>
     <div>
       <img src={image} alt="image" style={{width:'100%',borderRadius:'8px'}} />
       <h2>{name}</h2>
@@ -10,6 +12,7 @@ const RecipeCard = ({name,image,catagory,area,country,Instruction,id}) => {
       <h3>{country}</h3>
       <h3>{Instruction}</h3>
     </div>
+    </Link>
   )
 }
 

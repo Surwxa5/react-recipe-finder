@@ -23,7 +23,7 @@ const Recipes = () => {
   return (
     <div>
       <h1>Item List:</h1>
-      <input type="text" value={search} placeholder='Enter a Item name...' onChange={(e)=>setSearch(e.target.value)} />
+      <input style={{width:'600px',height:"50px",border:'solid black 2px',marginLeft:'300px',marginBottom:'20px',marginTop:'20px'}} type="text" value={search} placeholder='Enter a Item name...' onChange={(e)=>setSearch(e.target.value)} />
      
 
      <div style={{display:"grid",gridTemplateColumns:"repeat(auto-fill,minmax(250px,1fr))",gap:"20px" ,marginTop:'30px'}}>
